@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    padding-left: 3em;
+   
+}
+
+li > a{
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    text-decoration-color: none;
+    display: flex;
+    margin-top: 1em;
+}
+
+li > a:link{
+    color: #FFFFFF;
+    
+    
+}
+
+#lineOrange{
+    float: right;
+    margin-top: 1.5em;
+}
+
+nav{
+    background-color: #7E7E7E;
+    height: 14vh;
+}
+
+ul li a:hover {
+	border: #E55B1B;
+    border-radius: 8px 8px 8px 8px;
+	color: #FFFFFF;
+    border-style: solid;
+	border-width: 1px;
+}
+
+#LogoC2p{
+margin: 1em;
+position: absolute;
+}
+
+
+
+.caixa{
+    background-color: #C4C4C4;
+    margin-top: 5em;
+    height: 60vh;
+    width: 80vw;
+    display: flex;
+
+    
+}
+
+.titulo-sobre  > h1{
+    color: #FFFFFF;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2em;
+ 
+   
+    margin-bottom: 20px;
+    
+}
+
+.titulo-sobre {
+    max-width: 70%;
+    
+}
+
+.teste{
+    display: flex;
+    justify-content: center;
+}
+
+.texto-sobre{
+    color: #828282;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.79em;
+    
+    
+    
+}
+
+.foto-sobre{
+    background-color: rgba(229, 91, 27, .28) ;
+    height: 35vh;
+    width: 8vw;
+    
+}
+
+.verMais > a:link{
+    
+        color: #E55B1B;
+        text-decoration: none;
+        font-family: 'DM Sans', sans-serif;
+    
+}
+
+.verMais{
+    margin: 2em;
+}
+
+.solucao > h3{
+    font-family: 'DM Sans', sans-serif;
+    color: #E55B1B;
+    margin-top: 4.5em;
+}
+
+#linha-comprida{
+    margin-top: 5em;
+    height: 4.4px;
+}
+
+
+
+
+
