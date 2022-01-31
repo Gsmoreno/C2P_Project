@@ -24,10 +24,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
 
-  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
 
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-  <script type="text/javascript" src="../C2P Project/js/slick-adapt.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+
   <title>C2P Project</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -121,7 +121,7 @@
     <h3>Soluções</h3>
   </div>
 
-  <div class="d-flex justify-content-center ex">
+  <div class=" d-flex justify-content-center ex">
     <ul style="display: inline-flex; text-decoration: none;">
       <li><img src="./css/img/code.png" style=" height:7.36vh; width: 3.36vw;" class="img-fluid" alt="...">
         <p class="col-sm-5"> Criação
@@ -155,26 +155,39 @@
         <h4>AWS</h4>
         <img src="./css/img/awsLogo.png" class="img-fluid" alt="..." />
       </div>
-      <div class="img-carousel">
+      <div class="img-carousel" ">
         <h4>Microsoft</h4>
+
         <img src="./css/img/Microsoft-Logo.png" class="img-fluid" alt="..." />
       </div>
-      <div class="img-carousel">
+      <div class="img-carousel" ">
+        <h4>AWS</h4>
+
+        <img src="./css/img/awsLogo.png" class="img-fluid" alt="..." />
+      </div>
+      <div class="img-carousel" ">
+        <h4>Microsoft</h4>
+
+        <img src="./css/img/Microsoft-Logo.png" class="img-fluid" alt="..." />
+      </div>
+      <div class="img-carousel" style="margin: 1.8em;">
         <h4>AWS</h4>
         <img src="./css/img/awsLogo.png" class="img-fluid" alt="..." />
       </div>
     </div>
+
   </div>
   <img src="./css/img/linha-comprida.png" style=" height: 1.5px; width: 60%; margin-top: 3em;" class="img-fluid"
     alt="..." />
-  <img src="../C2P Project/css/img/linha-star-grande.png" style="float: right; margin-top: 4em;" class="img-fluid"
-    alt="...">
+  <img src="./css/img/linha-star-grande.png" style="float: right; margin-top: 4em;" class="img-fluid" alt="...">
 
 
   <div class="sobreNos d-flex justify-content-center col-md-12">
     <h2>Saiba mais sobre nossos serviços e
       soluções</h2>
   </div>
+
+
 
   <div class="botao-fale d-flex justify-content-center">
     <a href="#">Fale Conosco</a>
@@ -184,10 +197,10 @@
   <footer class="page-footer font-small my-footer col-md-12">
 
     <!-- Footer Links -->
-    
 
-      <!-- Grid row -->
-      <div class=" row " style=" height: 5vh;">
+
+    <!-- Grid row -->
+    <div class=" row " style=" height: 5vh;">
 
       <!-- Grid column -->
       <div class=" col-md-3 mx-auto ">
@@ -209,7 +222,7 @@
       </div>
       <img src="./css/img/icon-whats-branco.png" alt="icone do whatsap" style="float: right; margin: 1em;"
         height="35vh">
-  
+
     </div>
 
     <!-- Grid column -->
@@ -225,8 +238,43 @@
   <!-- Footer -->
 </body>
 
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
+
+<script src="../../js/jquery-1.9.1.js" type="text/javascript">
+</script>
+<script src="../../js/slick.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+
+
+
+    $('.carousel').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  })
+</script>
+
 
 </html>
