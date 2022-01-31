@@ -52,8 +52,6 @@ margin: 1em;
 position: absolute;
 }
 
-
-
 .caixa{
     background-color: #C4C4C4;
     margin-top: 5em;
@@ -212,9 +210,18 @@ position: absolute;
   
 }
 
-.links-footer{
+.-linksfooter{
     background-color: #d0d0d094;
 }
+
+h1{
+    color: #E55B1B;
+}
+
+label{
+    color: #E55B1B;
+}
+
 
 
 
