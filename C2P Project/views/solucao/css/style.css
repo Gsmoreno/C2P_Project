@@ -241,6 +241,7 @@ h3{
     background-image: url(../css/img/MontanhaFundo.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 

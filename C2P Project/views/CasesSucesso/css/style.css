@@ -157,13 +157,14 @@ position: absolute;
     margin-top: 6em;
 }
 
-
-.ex{
-    background-image: url(../css/img/img-fundoSolucao.png);
+.backgroundImage
+{
+    background-image: url(../css/img/background-fundoSolucao_png);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    
+    background-size: 100%;
 }
+
 
 .parceiros > h3{
     color: #E55B1B;
