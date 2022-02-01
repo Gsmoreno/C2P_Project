@@ -202,6 +202,8 @@ position: absolute;
     background-color: #E55B1B;
     color: #FFFFFF;
     font-family: 'DM Sans', sans-serif;margin-top: 4em;
+    bottom:0;
+	width:100%;
 }
 
 .my-footer > a{
@@ -222,6 +224,42 @@ label{
     color: #E55B1B;
 }
 
+
+.contato{
+    margin-top: 1em;
+    margin-bottom: 1.8em;
+}
+
+.logo{
+    align-items: end;
+    
+}
+
+.montanha{
+    overflow: hidden;
+}
+
+
+.column2{
+    text-align: center;
+    color: #828282;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.-linksfooter{
+    width: 100%;
+    border-style: solid;
+    border-color: #E55B1B;
+    border-width: 1px;
+}
+
+.border{
+    border-color: #E55B1B !important;
+}
+
+#motivo{
+    height: 39vh;
+}
 
 
 

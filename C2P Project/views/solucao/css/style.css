@@ -125,9 +125,9 @@ position: absolute;
 }
 
 .ex > ul > li{
-    background-color: #666666;
-    height: 30vh;
-    width: 19vw;
+    background-color: #F3F3F3;
+    height: 80vh;
+    width: 24vw;
     list-style: none;
     margin: 1.8em;
     border-width: 0.2em;
@@ -137,13 +137,24 @@ position: absolute;
     border-right-color: #414141;
     border-left-color: #414141;
     border-top-color: #414141;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.ex > ul > li > p{
-    color: #FFFFFF;
+.texto > a{
+    
+    display: flex;
+    justify-content: center;
+    color: #E55B1B;
+}
+
+.texto> p{
+    color: #515151;
     font-family: 'DM Sans', sans-serif;
-    font-size: 1.3em;
-    margin-top: 3.8em;
+    font-size: 0.8em;
+   
 }
 
 .ex > ul > li> img{
@@ -161,12 +172,7 @@ position: absolute;
 }
 
 
-.ex{
-    background-image: url(../css/img/img-fundoSolucao.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    
-}
+
 
 .parceiros > h3{
     color: #E55B1B;
@@ -216,8 +222,25 @@ position: absolute;
     background-color: #d0d0d094;
 }
 
+h3{
+    font-family: 'DM Sans', sans-serif;
+    color: #E55B1B;
+    margin-top: 1.8em;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.fotoPrince{
+    background-color: #F3F3F3;
+    
+}
 
 
-
+.montanha{
+    background-image: url(../css/img/MontanhaFundo.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 
 
