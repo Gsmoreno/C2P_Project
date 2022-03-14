@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
@@ -37,24 +38,24 @@
     <!-- ===============================================INCIO NAV ===================================== -->
     <nav>
         <div class="col-sm-12" style="padding-right: 0px;">
-            <a href="../Home/index.html"><img id="LogoC2p" src="./css/img/C2P-Logo-PNG.png" class="img-fluid col-sm-2"
+            <a href="../Home/index.html"><img id="LogoC2p" src="./css/img/C2P-Logo-PNG.png" class="img-fluid col-sm-2 animate__animated  animate__fadeInUp"
                     alt="Logo da C2P project" height="220px" width="220px"></a>
-            <img id="lineOrange" src="./css/img/Line 3.png" class="img-fluid" alt="...">
-            <ul class="nav justify-content-end col-sm-11">
+            <img id="lineOrange" src="./css/img/Line 3.png" class="img-fluid animate__animated  animate__backInRight" alt="...">
+            <ul class="nav justify-content-end col-sm-11 animate__animated animate__fadeInUp">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../Home/index.html">Home</a>
+                    <a id="bonitin" class="nav-link active" aria-current="page" href="../Home/index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../SobreNos/index.html">Quem somos</a>
+                    <a id="bonitin" class="nav-link active" aria-current="page" href="../SobreNos/index.html">Quem somos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../CasesSucesso/index.html">Cases de sucesso</a>
+                    <a id="bonitin" class="nav-link" href="../CasesSucesso/index.html">Cases de sucesso</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../solucao/index.html">Soluções</a>
+                    <a id="bonitin" class="nav-link" href="../solucao/index.html">Soluções</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../FaleConosco/index.html">Fale Conosco</a>
+                    <a id="bonitin" class="nav-link" href="../FaleConosco/index.html">Fale Conosco</a>
                 </li>
             </ul>
         </div>
@@ -63,24 +64,24 @@
     <!-- ===============================================FIM NAV ===================================== -->
     <h3>TecnoBank</h3>
     <div class="fotosCase ">
-        <div class="montanha1 d-flex justify-content-end">
+        <div class="montanha1 d-flex justify-content-end  animate__animated animate__backInLeft">
             <img src="./css/img/montanha1.png"
                 style=" position: absolute; margin-top: 1.6em; width: 25%; float: right ;" width="50%" alt="">
         </div>
-        <div class="montanha2 d-flex justify-content-start">
+        <div class="montanha2 d-flex justify-content-start  animate__animated animate__backInRight">
             <img src="./css/img/montanha2.png"
                 style="position: absolute;    margin-top: 4.7em; width: 25%; float: left;" width="50%" alt="">
         </div>
         <div class="fotoexemplo d-flex justify-content-center">
-            <img src="./css/img/exemploCase.png" width="50%" alt="">
+            <img src="./css/img/exemploCase.png" class="animate__backInUp animate__animated " width="50%" alt="">
         </div>
     </div>
-    <img src="./css/img/linha-comprida.png" style=" height: 1.5px; width: 100%;" class="img-fluid" />
-    <div class="tudo flex-row d-flex">
+    <img src="./css/img/linha-comprida.png" style=" height: 1.5px; width: 100%;" class="img-fluid animate__zoomIn animate__animated" />
+    <div class="tudo flex-row d-flex justify-content-center">
 
 
-        <div class="d-flex justify-content-start col-md-6">
-            <div class="detalhes col-md-7" style="margin-left: 5em; margin-top: 3em;">
+        <div class="d-flex justify-content-center  col-md-8">
+            <div class="detalhes col-md-12" style="margin-left: 5em; margin-top: 3em;">
                 <p id="titulo">Desafios</p>
                 <p class="col-sm-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     Ipsum has been the
@@ -97,12 +98,13 @@
                     also
                     the leap into electronic typesetting, remaining essentially unchanged.
                     It was popularised</p>
+                    <div class="d-flex justify-content-center col-md-12">
+
+                        <img  style=" overflow: hidden; width: 40%;" src="./css/img/tecnobank-logo.png" alt="">
+                    </div>
             </div>
         </div>
-        <div class="tecno d-flex justify-content-center col-md-5 ">
-
-            <img class="col-md-12" style=" overflow: hidden; width: 100%;" src="./css/img/tecnobank-logo.png" alt="">
-        </div>
+        
     </div>
 
     <!-- Footer -->

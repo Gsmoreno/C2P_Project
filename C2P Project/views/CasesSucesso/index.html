@@ -27,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
 
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <title>C2P Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,24 +40,24 @@
     <!-- ===============================================INCIO NAV ===================================== -->
     <nav>
         <div class="col-sm-12" style="padding-right: 0px;">
-            <a href="../Home/index.html"><img id="LogoC2p" src="./css/img/C2P-Logo-PNG.png" class="img-fluid col-sm-2"
+            <a href="../Home/index.html"><img id="LogoC2p" src="./css/img/C2P-Logo-PNG.png" class="img-fluid col-sm-2 animate__animated animate__fadeInUp"
                     alt="Logo da C2P project" height="220px" width="220px"></a>
-            <img id="lineOrange" src="./css/img/Line 3.png" class="img-fluid" alt="...">
+            <img id="lineOrange" src="./css/img/Line 3.png" class="img-fluid animate__animated animate__backInLeft" alt="...">
             <ul class="nav justify-content-end col-sm-11">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../Home/index.html">Home</a>
+                    <a id="bonitin" class="nav-link active" aria-current="page" href="../Home/index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../SobreNos/index.html">Quem somos</a>
+                    <a id="bonitin" class="nav-link active" aria-current="page" href="../SobreNos/index.html">Quem somos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../CasesSucesso/index.html">Cases de sucesso</a>
+                    <a id="bonitin" class="nav-link" href="../CasesSucesso/index.html">Cases de sucesso</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../solucao/index.html">Soluções</a>
+                    <a id="bonitin" class="nav-link" href="../solucao/index.html">Soluções</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../FaleConosco/index.html">Fale Conosco</a>
+                    <a id="bonitin" class="nav-link" href="../FaleConosco/index.html">Fale Conosco</a>
                 </li>
             </ul>
         </div>
@@ -64,13 +65,13 @@
 
     <!-- ===============================================FIM NAV ===================================== -->
 
-    <img src="./css/img/linhafina.png" style="position: absolute; margin-top: 2em;" class="img-fluid" alt="...">
+    <img src="./css/img/linhafina.png" style="position: absolute; margin-top: 2em;" class="img-fluid animate__animated animate__backInLeft" alt="...">
 
     <h3>Cases</h3>
-    <div class="cases">
+    <div class="cases animate__animated animate__bounceInRight">
         <div class="linhadentro col-12 d-flex justify-content-end" style=" padding-right: 0px;">
             <img src="./css/img/linhafina.png" style=" height: 1px; width: 50%; float: right; margin-top: 2em;"
-                class="img-fluid" alt="...">
+                class="img-fluid animate__animated animate__backInRight" alt="...">
         </div>
 
         <div class="fotos ">
@@ -107,43 +108,127 @@
     <img src="./css/img/linhafina.png" style=" width: 100%; height: 1px; " class="img-fluid" alt="...">
 
     <div class="backgroundImage d-flex justify-content-center ml-10">
-        <div class="Casos">
+        <div class="Casos" style="height: 850px;">
             <div class=" d-flex justify-content-center ex">
-                <ul style="display: inline-flex; text-decoration: none; ">
-                    <li><img src="./css/img/tecnobank-logo.png" style=" width: 70%; height: 45%;" class="img-fluid"
-                            alt="...">
-                        <form class="d-flex justify-content-center" style="width: 100%;"
-                            action="../VerMaisCase/index.html"><button id="button-Vermais">Ver Mais</button></form>
-                    </li>
-                    <li><img src="./css/img/tecnobank-logo.png" style=" width: 70%; height: 45%;" class="img-fluid"
-                            alt="...">
-                        <form class="d-flex justify-content-center" style="width: 100%;"
-                            action="../VerMaisCase/index.html"><button id="button-Vermais">Ver Mais</button></form>
-                    </li>
-                    <li><img src="./css/img/tecnobank-logo.png" style=" width: 70%; height: 45%;" class="img-fluid"
-                            alt="...">
-                        <form class="d-flex justify-content-center" style="width: 100%;"
-                            action="../VerMaisCase/index.html"><button id="button-Vermais">Ver Mais</button></form>
-                    </li>
+                <ul style="display: inline-flex; text-decoration: none; " >
+                    <div class="flip-container " ontouchstart="this.classList.toggle('hover');">
+                        <li class="flipper">
+                            <div class="front">  			
+                                <!-- Conteúdo da frente -->  
+                                <img src="./css/img/tecnobank-logo.png" style=" margin-top: 18%;" class="img-fluid" alt="...">		
+                            </div>  	 
+                            <div class="back"> 
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem Ipsum has been the
+                                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                                    of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                                    leap into electronic typesetting, remaining essentially unchanged.
+                                   </p>	 			
+                                <!-- Conteúdo do verso -->  		
+                                <form class="d-flex justify-content-center" style="width: 100%; "
+                                action="../VerMaisCase/index.html"><button id="button-Vermais">Ver Mais</button></form>
+                            </div>  		
+                        </li>
+                    </div>
+                    <div class="flip-container " ontouchstart="this.classList.toggle('hover');">
+                        <li class="flipper">
+                            <div class="front">  			
+                                <!-- Conteúdo da frente -->  
+                                <img src="./css/img/tecnobank-logo.png" style=" margin-top: 18%;"  class="img-fluid" alt="...">		
+                            </div>  	 
+                            <div class="back"> 
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem Ipsum has been the
+                                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                                    of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                                    leap into electronic typesetting, remaining essentially unchanged.
+                                   </p>	 			
+                                <!-- Conteúdo do verso -->  		
+                                <form class="d-flex justify-content-center" style="width: 100%;"
+                                action="../VerMaisCase/index.html"><button id="button-Vermais">Ver Mais</button></form>
+                            </div>  		
+                        </li>
+                    </div>
+                    <div class="flip-container " ontouchstart="this.classList.toggle('hover');">
+                        <li class="flipper">
+                            <div class="front">  			
+                                <!-- Conteúdo da frente -->  
+                                <img src="./css/img/tecnobank-logo.png" style=" margin-top: 18%;"  class="img-fluid" alt="...">		
+                            </div>  	 
+                            <div class="back">  
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem Ipsum has been the
+                                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                                    of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                                    leap into electronic typesetting, remaining essentially unchanged.
+                                   </p>				
+                                <!-- Conteúdo do verso -->  		
+                                <form class="d-flex justify-content-center" style="width: 100%;"
+                                action="../VerMaisCase/index.html"><button id="button-Vermais">Ver Mais</button></form>
+                            </div>  		
+                        </li>
+                    </div>
                 </ul>
             </div>
             <div class=" d-flex justify-content-center ex">
                 <ul style="display: inline-flex; text-decoration: none;">
-                    <li><img src="./css/img/tecnobank-logo.png" style=" width: 70%; height: 45%;" class="img-fluid"
-                            alt="...">
-                        <form class="d-flex justify-content-center" style="width: 100%;"
-                            action="../VerMaisCase/index.html"><button id="button-Vermais">Ver Mais</button></form>
-                    </li>
-                    <li><img src="./css/img/tecnobank-logo.png" style=" width: 70%; height: 45%;" class="img-fluid"
-                            alt="...">
-                        <form class="d-flex justify-content-center" style="width: 100%;"
-                            action="../VerMaisCase/index.html"><button id="button-Vermais">Ver Mais</button></form>
-                    </li>
-                    <li><img src="./css/img/tecnobank-logo.png" style=" width: 70%; height: 45%;" class="img-fluid"
-                            alt="...">
-                        <form class="d-flex justify-content-center" style="width: 100%;"
-                            action="../VerMaisCase/index.html"><button id="button-Vermais">Ver Mais</button></form>
-                    </li>
+                    <div class="flip-container " ontouchstart="this.classList.toggle('hover');">
+                        <li class="flipper">
+                            <div class="front">  			
+                                <!-- Conteúdo da frente -->  
+                                <img src="./css/img/tecnobank-logo.png" style=" margin-top: 18%;"  class="img-fluid" alt="...">		
+                            </div>  	 
+                            <div class="back"> 
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem Ipsum has been the
+                                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                                    of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                                    leap into electronic typesetting, remaining essentially unchanged.
+                                   </p>	 			
+                                <!-- Conteúdo do verso -->  		
+                                <form class="d-flex justify-content-center" style="width: 100%;"
+                                action="../VerMaisCase/index.html"><button id="button-Vermais">Ver Mais</button></form>
+                            </div>  		
+                        </li>
+                    </div>
+                    <div class="flip-container " ontouchstart="this.classList.toggle('hover');">
+                        <li class="flipper">
+                            <div class="front">  			
+                                <!-- Conteúdo da frente -->  
+                                <img src="./css/img/tecnobank-logo.png" style=" margin-top: 18%;"style=" margin-top: 18%;"  class="img-fluid" alt="...">		
+                            </div>  	 
+                            <div class="back">  			
+                                <!-- Conteúdo do verso --> 
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem Ipsum has been the
+                                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                                    of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                                    leap into electronic typesetting, remaining essentially unchanged.
+                                   </p>	 		
+                                <form class="d-flex justify-content-center" style="width: 100%;"
+                                action="../VerMaisCase/index.html"><button id="button-Vermais">Ver Mais</button></form>
+                            </div>  		
+                        </li>
+                    </div>
+                    <div class="flip-container " ontouchstart="this.classList.toggle('hover');">
+                        <li class="flipper">
+                            <div class="front">  			
+                                <!-- Conteúdo da frente -->  
+                                <img src="./css/img/tecnobank-logo.png"  style=" margin-top: 18%;" class="img-fluid" alt="...">		
+                            </div>  	 
+                            <div class="back">  			
+                                <!-- Conteúdo do verso -->  
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem Ipsum has been the
+                                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                                    of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                                    leap into electronic typesetting, remaining essentially unchanged.
+                                   </p>		
+                                <form class="d-flex justify-content-center" style="width: 100%;"
+                                action="../VerMaisCase/index.html"><button id="button-Vermais">Ver Mais</button></form>
+                            </div>  		
+                        </li>
+                    </div>
                 </ul>
             </div>
         </div>

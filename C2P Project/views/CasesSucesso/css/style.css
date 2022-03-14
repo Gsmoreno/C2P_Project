@@ -35,16 +35,31 @@ li > a:link{
 }
 
 nav{
-    background-color: #7E7E7E;
+    background-color: #C4C4C4;
     height: 14vh;
 }
 
-ul li a:hover {
-	border: #E55B1B;
-    border-radius: 8px 8px 8px 8px;
+#bonitin::after, #bonitin::before {
+	content: '';
+	display: block;
+	background: #E55B1B;
+	width: 0;
+	height: 2px;
+	border-radius: 4px;
 	color: #FFFFFF;
-    border-style: solid;
-	border-width: 1px;
+    margin: 3px auto 3px auto;
+	transition: all .2s ease;
+}
+
+#bonitin:hover::after, #bonitin:hover::before {
+	width: 100%;
+}
+
+ul li a:hover {
+
+
+	color: #FFFFFF;
+   
 }
 
 #LogoC2p{
@@ -124,8 +139,8 @@ position: absolute;
     height: 4.4px;
 }
 
-.ex > ul > li{
-    background-color: #666666;
+.flip-container > li{
+    background-color: #F3F3F3;
     height: 30vh;
     width: 19vw;
     list-style: none;
@@ -134,20 +149,24 @@ position: absolute;
     border-bottom-color:#E55B1B;
     border-style: solid;
     border-width: 1px 1px 6px 1px;
-    border-right-color: #414141;
-    border-left-color: #414141;
-    border-top-color: #414141;
+    border-right-color: #E55B1B;
+    border-left-color: #E55B1B;
+    border-top-color: #E55B1B;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-.ex > ul > li > p{
-    color: #FFFFFF;
+.flip-container > li > p{
+    color: #000000;
     font-family: 'DM Sans', sans-serif;
     font-size: 1.3em;
     margin-top: 3.8em;
+}
+
+.ex{
+    height: 30%;
 }
 
 
@@ -278,3 +297,52 @@ h3{
     outline:none;
     margin-top: 1.3em;
 }
+
+.flip-container { perspective: 1000; }  	
+
+/* vira os containers frente e verso quando o mouse passa em cima */
+.flip-container:hover .flipper, .flip-container.hover .flipper {  		
+  transform: rotateY(180deg);  	
+}    
+.flip-container, .front, .back {  	
+  width: 320px;  	
+  height: 480px;  
+}
+
+/* define a velocidade da transição */
+.flipper {  	
+  transition: 0.6s;  	
+  transform-style: preserve-3d;    	
+  position: relative;  
+}
+    
+/* esconde o verso durante a animação */
+.front, .back {  	
+  backface-visibility: hidden;    	
+  position: absolute;  	
+  top: 0;  	
+ left: 0;  
+}
+    
+/* frente posicionada sobre o verso */
+.front { z-index: 2; height: 50%;  }    
+
+/* verso inicialmente escondido */
+.back { 
+     transform: rotateY(180deg); 
+     width: 300px;
+     display: flex;
+     flex-flow: column;
+     align-items: center;
+     height: 50%;
+    }
+
+.back > p{
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.53em;
+    width: 50%;
+    margin-top: 1em;
+   
+}
+
